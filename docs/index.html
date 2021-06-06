@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>化学 | Chemistry</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+    <link rel="stylesheet" href="//unpkg.com/docsify-toc@1.0.0/dist/toc.css">
+    <link href="//cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: 'Chemistry',
+            repo: 'https://github.com/Wiki-Everything/cn-chemistry-textbook',
+            loadSidebar: true,
+            relativePath: true,
+            loadNavbar: true,
+            alias: {
+                "/~(.*)": '/_tpl/$1',
+            },
+            pagination: {
+                previousText: 'PREVIOUS',
+                nextText: 'NEXT',
+                crossChapter: true,
+                crossChapterText: true
+            },
+            'flexible-alerts': {
+                note: {
+                    label: '注释'
+                },
+                tip: {
+                    label: '提示'
+                },
+                warning: {
+                    label: '警告'
+                },
+                attention: {
+                    label: '注意'
+                },
+                relate: {
+                    label: '相关内容',
+                    icon: 'fas fa-map',
+                    className: 'note'
+                }
+            },
+            remoteMarkdown: {
+                tag: '~',
+            },
+            toc: {
+                scope: '.markdown-section',
+                headings: 'h1, h2, h3, h4, h5, h6',
+                title: 'Table of Contents',
+            }
+        }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
+    <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="/assets/js/docsify-remote-markdown.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+    <script defer src="/assets/js/docsify-katex.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M" crossorigin="anonymous"></script>
+</body>
+
+</html>
